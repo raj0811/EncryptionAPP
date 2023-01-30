@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".morsecode">
+
+    <EditText
+        android:id="@+id/morseText"
+        android:layout_width="314dp"
+        android:layout_height="74dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:hint="Enter your message"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/textview_border"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <Button
+        android:id="@+id/conbtn"
+        android:layout_width="165dp"
+        android:layout_height="72dp"
+        android:onClick="mcode"
+        android:text="Convert"
+        app:backgroundTint="#3A373A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morseText"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <TextView
+        android:id="@+id/mres"
+        android:layout_width="302dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/textview_border"
+        android:hint="  your codded message"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conbtn"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <Button
+        android:id="@+id/mimg"
+        android:layout_width="231dp"
+        android:layout_height="54dp"
+        android:onClick="mchart"
+        android:text="learn morse code"
+        app:backgroundTint="#282C34"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mres" />
+</androidx.constraintlayout.widget.ConstraintLayout>

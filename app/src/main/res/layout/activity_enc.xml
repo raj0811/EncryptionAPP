@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enc">
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:background="@drawable/textview_border"
+        android:hint="Enter your message here"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <Button
+        android:id="@+id/encbtn"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:onClick="startenc"
+
+        android:text="Encrypt"
+        app:backgroundTint="#302F2F"
+        app:layout_constraintBottom_toTopOf="@+id/res"
+        app:layout_constraintEnd_toStartOf="@+id/dycbtn"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <Button
+        android:id="@+id/dycbtn"
+        android:layout_width="101dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="52dp"
+        android:onClick="startdyc"
+        android:text="Dycript"
+        app:backgroundTint="#2E2E2E"
+        app:layout_constraintBottom_toTopOf="@+id/res"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618" />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="287dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="216dp"
+        android:background="@drawable/textview_border"
+        android:hint="RESULT"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg"
+        app:layout_constraintVertical_bias="0.054" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
